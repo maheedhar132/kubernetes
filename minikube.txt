@@ -1,0 +1,32 @@
+Minikube is a tool that lets us run kubernetes "Locally".
+It helps us create a singe node cluster so that we can test Kubernetes.
+
+minikube version 
+-- Helps us get the version of minikube that is installed.
+Sample output of minikube version
+$ minikube version
+minikube version: v1.8.1
+commit: cbda04cf6bbe65e987ae52bb393c10099ab62014
+
+
+To Start the cluster run the minikube start command:
+
+minikube start --wait=false
+
+
+
+
+To get the info of running nodes , we use:
+
+kubectl get nodes
+
+Using kubectl run, it allows containers to be deployed onto the cluster - 
+
+kubectl create deployment first-deployment --image=katacoda/docker-http-server
+
+
+
+The status of the deployment can be discovered via the running Pods - 
+
+kubectl get pods
+
